@@ -2,44 +2,97 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Portafolio – Berta Venegas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Berta Venegas – Frontend Developer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Berta Venegas</h1>
-    <p>Artista y Desarrolladora Frontend en formación (CENSE)</p>
+    <div class="hero">
+      <h1>Berta Venegas</h1>
+      <p class="subtitle">
+        Artista plástica y <strong>Desarrolladora Frontend</strong> en formación<br>
+        Creando interfaces simples, claras y funcionales con JavaScript
+      </p>
+    </div>
   </header>
 
-  <section id="projects">
-    <h2>Proyectos</h2>
+  <main>
+    <section id="projects" class="section">
+      <h2>📁 Proyectos</h2>
+      
+      <article class="project">
+        <div class="project-content">
+          <h3>Aplicación de consola JS</h3>
+          <p class="project-desc">
+            Aplicación interactiva en consola del navegador que implementa operaciones 
+            matemáticas, manejo de arreglos, objetos y tablas de multiplicar. Incluye 
+            validaciones, menú interactivo con <code>prompt()</code> y funciones modulares.
+          </p>
+          <p class="tech"><strong>Tecnologías:</strong> HTML, JavaScript</p>
+          <div class="project-links">
+            <a href="https://bertavenegassilva.github.io/m4_abp_js/" 
+               target="_blank" class="btn btn-demo">🔗 Ver demo</a>
+            <a href="https://github.com/bertavenegassilva/m4_abp_js" 
+               target="_blank" class="btn btn-code">💾 Ver código</a>
+          </div>
+        </div>
+      </article>
 
-    <article class="project">
-      <h3>Aplicación de consola JS (CENSE M4)</h3>
-      <p>App en consola navegador con operaciones, arreglos, objetos y menú interactivo.</p>
-      <p><strong>Tecnologías:</strong> HTML, JavaScript</p>
-      <a href="https://bertavenegassilva.github.io/m4_abp_js/" target="_blank">Ver demo</a>
-      <a href="https://github.com/bertavenegassilva/m4_abp_js" target="_blank">Ver código</a>
-    </article>
+      <article class="project">
+        <div class="project-content">
+          <h3>TaskFlow – Gestión de tareas</h3>
+          <p class="project-desc">
+            Aplicación web completa para crear, editar y eliminar tareas. Implementa 
+            <strong>POO (clases)</strong>, manipulación del DOM, eventos, <code>async/await</code> 
+            y fetch a APIs externas. Persiste datos en localStorage.
+          </p>
+          <p class="tech"><strong>Tecnologías:</strong> HTML, CSS, JavaScript moderno</p>
+          <div class="project-links">
+            <a href="#" class="btn btn-demo" target="_blank">[Demo pronto]</a>
+            <a href="#" class="btn btn-code" target="_blank">[Código pronto]</a>
+          </div>
+        </div>
+      </article>
+    </section>
 
-    <article class="project">
-      <h3>TaskFlow – Gestión de tareas</h3>
-      <p>Aplicación web para gestionar tareas usando POO, DOM y JavaScript asíncrono.</p>
-      <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript (fetch, async/await)</p>
-      <!-- Aquí pondrás los links cuando lo subas -->
-    </article>
-  </section>
+    <section id="about" class="section">
+      <h2>Sobre mí</h2>
+      <div class="about-content">
+        <p>
+          Soy artista plástica especializada en pintura acrílica y actualmente estoy 
+          transitando hacia el desarrollo web frontend. Estudio en <strong>CENSE</strong> 
+          y practico diariamente con proyectos reales en JavaScript.
+        </p>
+        <p>
+          Me apasionan las <strong>interfaces claras y funcionales</strong>, el código 
+          bien organizado y la combinación entre diseño visual y lógica de programación. 
+          Trabajo con HTML, CSS, JavaScript moderno (funciones, DOM, APIs, async) y 
+          herramientas profesionales como GitHub y VS Code.
+        </p>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Soy estudiante de desarrollo web. Me especializo en JavaScript, 
-       interfaces simples y proyectos visuales.</p>
-  </section>
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> bertavenegassilva@gmail.com</p>
+        <p><strong>GitHub:</strong> 
+          <a href="https://github.com/bertavenegassilva" target="_blank">
+            github.com/bertavenegassilva
+          </a>
+        </p>
+        <p><strong>LinkedIn:</strong> [Próximamente]</p>
+      </div>
+    </section>
+  </main>
 
-  <section id="contact">
-    <h2>Contacto</h2>
-    <p>Email: bertavenegassilva@gmailmail.com</p>
-    <p>GitHub: <a href="https://github.com/bertavenegassilva" target="_blank">bertavenegassilva</a></p>
-  </section>
+  <footer>
+    <p>&copy; 2026 Berta Venegas. Hecho con ❤️ y JavaScript.</p>
+  </footer>
 </body>
 </html>
+
